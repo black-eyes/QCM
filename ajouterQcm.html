@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<style type="text/css">
+		.carte
+		{
+			border-right: 1px black solid;
+			
+			padding: 40px 30px;
+			margin-top: 20px;
+		}
+		.plus
+		{
+			background-color: red;
+			height: 100px;
+			width: 100px;
+			margin-top: 20%;
+
+		}
+		.mainBtn
+		{
+			position: fixed;
+		    top: 50px;
+		    right: 50px;
+		    z-index: 3;
+		}
+	</style>
+</head>
+<body>
+
+	<div class="container">
+		<form class="" id="form"> 
+			<div class="carte col-md-4"> 
+					<div class="form-group">
+						<label>
+							Question
+						</label>
+						<input type="text" name="" placeholder="votre question!!" class="form-control">
+					</div>
+					<div class="form-group">
+						<label>
+							text
+						</label>
+						<textarea  class="form-control" placeholder="un texte explicatif en cas de besoin "></textarea>
+					</div>
+			</div>
+			
+
+
+
+
+
+
+
+
+			<input type="submit" class="btn btn-success mainBtn" name="">
+		</form>
+			<div class="col-md-4" id="add"> 
+				<div class="col-md-6 col-md-offset-4 plus ">
+					
+				</div>
+			</div>
+	</div>
+
+	<script type="text/javascript" src="js/bootstrap.js"></script>
+
+
+	<script type="text/javascript">
+		$().ready(function()
+			{
+				$("#add").click(function()
+					{
+	
+
+
+						$("#form").append("<div class='carte col-md-4'><div class='form-group'><label>Question</label><input type='' name='' placeholder='votre question!!' class='form-control'></div><div class='form-group'><label>text</label><textarea  class='form-control' placeholder='un texte explicatif en cas de besoin '></textarea></div></div>");
+					});
+			});
+	</script>
+</body>
+</html>
